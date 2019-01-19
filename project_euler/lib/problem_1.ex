@@ -10,6 +10,6 @@ defmodule Problem1 do
   # Find the sum of all the multiples of 3 or 5 below 1000.
 
   def solve() do
-    Enum.sum(for i <- 1..1000, rem(i, 3) == 0 or rem(i, 5) == 0, do: i)
+    Enum.sum(for i <- 1..1000, i < 1000, rem(i, 3) == 0 or rem(i, 5) == 0, do: i)
   end
 end
