@@ -13,10 +13,10 @@ defmodule Problem2 do
   def solve(), do: solve(1)
 
   def solve(1) do
-    Enum.sum(for i <- tl(Fibonaci.seq(1_000_000)), rem(i, 2) == 0, do: i)
+    Enum.sum(for i <- tl(Fibonaci.seq(4_000_000)), rem(i, 2) == 0, do: i)
   end
 
   def solve(2) do
-    round(Enum.sum(Fibonaci.seq(1_000_000)) / 2)
+    round(Enum.sum(Fibonaci.seq(4_000_000)) / 2)
   end
 end
