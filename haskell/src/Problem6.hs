@@ -1,4 +1,6 @@
-module Problem6 where
+module Problem6
+( solving )
+where
 
 {-
 
