@@ -20,8 +20,8 @@ How many, not necessarily distinct, values of  nCr, for 1 ≤ n ≤ 100, are gre
 -}
 
 factorial :: Integer -> Integer
-factorial x = foldl (*) 1 [1..x]
 factorial 0 = 1
+factorial x = foldl (*) 1 [1..x]
 
 c :: Integer -> Integer -> Integer
 c n r | r <= n = (factorial n) `div` ((factorial r) * factorial (n - r))
