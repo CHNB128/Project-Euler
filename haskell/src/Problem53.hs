@@ -23,8 +23,8 @@ factorial :: Integer -> Integer
 factorial x = foldl (*) 1 [1..x]
 factorial 0 = 1
 
-c :: Int -> Int -> Int
-c n r | r <= n = (factorial n) / ((factorial r) * factorial (n - r))
+c :: Integer -> Integer -> Integer
+c n r | r <= n = (factorial n) `div` ((factorial r) * factorial (n - r))
 
 solver from to = [ c x 10 | x <- [from..to] ]
 
