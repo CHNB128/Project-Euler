@@ -26,6 +26,6 @@ factorial 0 = 1
 c :: Int -> Int -> Int
 c n r | r <= n = (factorial n) / ((factorial r) * factorial (n - r))
 
-solvre from to = [ c x 10 | x <- [from..to] ]
+solver from to = [ c x 10 | x <- [from..to] ]
 
 solving = solver 1 100
